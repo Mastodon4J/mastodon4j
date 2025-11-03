@@ -150,12 +150,12 @@ allprojects {
 
 subprojects {
   dependencies {
-    testImplementation 'org.assertj:assertj-core:3.27.6'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:6.0.1'
-    testImplementation 'org.mockito:mockito-junit-jupiter:5.20.0'
+    testImplementation libs.assertj.core
+    testImplementation libs.junit.jupiter.params
+    testImplementation libs.mockito.junit.jupiter
 
-    testRuntimeOnly 'org.junit.platform:junit-platform-runner:1.14.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:6.0.1'
+    testRuntimeOnly libs.junit.platform.runner
+    testRuntimeOnly libs.junit.jupiter.engine
   }
 
   compileJava {
